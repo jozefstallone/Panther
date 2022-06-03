@@ -34,195 +34,270 @@
     <script src="./js/formHandler.js"></script>
 
     <!--TODO AJOUT DE GOOGLE ANALYTICS  -->
-    <!-- Analytics -->
-    <!-- Analytics END -->
+    <!--* Analytics -->
+    <!--* Analytics END -->
 
-    <!--! AJOUT D'UN TITRE"  -->
+    <!--! AJOUT D'UN TITRE" -->
     <title>Formulaire de contact | La Panthère, Webdesign</title>
   </head>
 
-  <body>
-    <!-- Principal conteneur -->
-    <div class="page-container">
-      <!-- bloc-0 -->
-      <div class="bloc bgc-white l-bloc" id="bloc-0">
-        <div class="container bloc-sm">
-          <nav class="navbar row">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="index.html"
-                ><img
-                  src="img/agence-la-panthere-monochrome.svg"
-                  alt="atlanta web design logo"
-                  height="40"
-              /></a>
-              <button
-                id="nav-toggle"
-                type="button"
-                class="ui-navbar-toggle navbar-toggle"
-                data-toggle="collapse"
-                data-target=".navbar-1"
-              >
-                <span class="sr-only">Toggle navigation</span
-                ><span class="icon-bar"></span><span class="icon-bar"></span
-                ><span class="icon-bar"></span>
-              </button>
-            </div>
-            <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-              <ul class="site-navigation nav navbar-nav">
-                <li>
-                  <a href="index.html">Accueil</a>
-                </li>
-                <li></li>
-                <li>
-                  <!--! CHANGEMENT LIEN + ANCRE"  -->
-                  <a href="/contact-la-panthere-agence-webdesign-lyon.html"
-                    >Contactez-nous</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-      <!-- bloc-0 END -->
 
-      <!-- bloc-6 -->
-      <div
+
+  <!--! BODY -->
+  <body class="page-container">
+
+    <!--* HEADER -->
+    <header class="bloc bgc-white l-bloc" id="bloc-0">
+
+      <!--* CONTAINER HEADER -->
+      <div class="container bloc-sm">
+
+        <!--! NAVIGATION BAR -->
+        <nav class="navbar row">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+
+              <!--! LOGO -->
+              <img
+                src="img/agence-la-panthere-monochrome.svg"
+                alt="atlanta web design logo"
+                height="40"/>
+            </a>
+
+            <!--! MOBILE TOGGLE BUTTON -->
+            <button
+              id="nav-toggle"
+              type="button"
+              class="ui-navbar-toggle navbar-toggle"
+              data-toggle="collapse"
+              data-target=".navbar-1">
+              <span class="sr-only">Toggle navigation</span
+              ><span class="icon-bar"></span><span class="icon-bar"></span
+              ><span class="icon-bar"></span>
+            </button>              
+          </div>
+
+          <!--! LINKS / ACCUEIL / CONTACT -->          
+          <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+            <ul class="site-navigation nav navbar-nav">
+              <li>
+                <a href="index.html">Accueil</a>
+              </li>
+              <li></li>
+              <li>
+                <!--! CHANGEMENT LIEN + ANCRE" -->
+                <a href="/contact-la-panthere-agence-webdesign-lyon.html"
+                  >Contactez-nous</a
+                >
+              </li>
+            </ul>
+          </div>
+
+        </nav>
+      <!--! (END) NAVIGATION BAR -->
+      </div>
+      <!--* (END) CONTAINER HEADER -->
+    </header>
+    <!--* (END) HEADER -->
+
+    <!--! MAIN -->
+    <main>
+
+      <!--* SECTION 1 / PARLONS WEB -->
+      <section
         class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper"
-        id="bloc-6"
-      >
+        id="bloc-6"> <!--! BACKGROUND -->
+
         <div class="container bloc-lg">
           <div class="row">
             <div class="col-sm-12">
+              <!--! TITLE -->
               <h1 class="text-center hero-bloc-text tc-white">
                 Parlons web design !
               </h1>
+
+              <!--! SUB-TEXT -->
               <p class="text-center mg-lg tc-white tight-width-whitespace">
                 Nous sommes ravis que vous souhaitiez collaborer avec notre
                 agence.<br />
                 Parlez-nous de votre projet en complétant le formulaire
                 ci-dessous.
               </p>
-            </div>
+            </div>            
           </div>
-        </div>
-      </div>
-      <!-- bloc-6 END -->
+        </div>        
+      </section>
+      <!--* (END) SECTION 1 / PARLONS WEB -->
 
-      <!-- bloc-7 -->
-      <div class="bloc bgc-white l-bloc" id="bloc-7">
-        <div class="container bloc-lg">
-          <div class="row">
-            <div class="col-sm-6">
-              <form
-                id="form_1"
-                novalidate
-                success-msg="Your message has been sent."
-                fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
-              >
-                <div class="form-group">
-                  <label> Nom </label>
-                  <input id="name" class="form-control" required />
-                </div>
-                <div class="form-group">
-                  <label> Adresse email </label>
-                  <input
-                    id="email"
-                    class="form-control"
-                    type="email"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label> Comment nous avez-vous connu ? </label>
-                  <input
-                    class="form-control"
-                    type="email"
-                    required
-                    id="input_504"
-                  />
-                </div>
-                <div class="form-group">
-                  <label>
-                    Brief de votre projet (Ajoutez autant de détails que
-                    nécessaire)<br /> </label
-                  ><textarea
-                    id="message"
-                    class="form-control"
-                    rows="4"
-                    cols="50"
-                    required
-                  ></textarea>
-                </div>
-                <button
-                  class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
-                  type="submit"
+
+
+        <!--* SECTION 2 / CONTACT FORM -->
+        <div class="bloc bgc-white l-bloc" id="bloc-7">
+
+          <!--* CONTAINER 1 -->
+          <div class="container bloc-lg">
+
+          <!--* CONTAINER 2 -->
+            <div class="row">
+
+              <!--* CONTAINER 3 - PERMET L'ASIDE MAIL/ADRESSE SUR LA DROITE DU FORM -->
+              <div class="col-sm-6">
+
+                <!--! FORM CONTACT -->
+                <form    
+                  id="form_1"
+                  novalidate
+                  success-msg="Your message has been sent."
+                  fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
                 >
-                  Envoyer
-                </button>
-              </form>
+
+                  <!--! ITEN 1 / NAME -->
+                  <div class="form-group">
+                    <label> Nom </label>
+                    <input id="name" class="form-control" required />
+                  </div>
+
+                  <!--! ITEN 1 / MAIL -->
+                  <div class="form-group">
+                    <label> Adresse email </label>
+                    <input
+                      id="email"
+                      class="form-control"
+                      type="email"
+                      required
+                    />
+                  </div>
+
+                  <!--! ITEN 3 / HEARD OF US -->
+                  <div class="form-group">
+                    <label> Comment nous avez-vous connu ? </label>
+                    <input
+                      class="form-control"
+                      type="email"
+                      required
+                      id="input_504"
+                    />
+                  </div>
+
+                  <!--! ITEN 4 / PROJECT BRIEF -->
+                  <div class="form-group">
+                    <label>
+                      Brief de votre projet (Ajoutez autant de détails que
+                      nécessaire)<br /> </label
+                    ><textarea
+                      id="message"
+                      class="form-control"
+                      rows="4"
+                      cols="50"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <!--! BUTTON CONFIRM "ENVOYER" -->
+                  <button
+                    class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
+                    type="submit"
+                  >
+                    Envoyer
+                  </button>
+
+                </form>
+                <!--! (END) FORM CONTACT -->
+              </div>
+
+              <!--! ASIDE / MAIL, ADRESSE, HORAIRES -->
+              <!--TODO / DÉPLACER AUTRE PART ? -->            
+              <div class="col-sm-6">
+                <p>
+                  contact@agencelapanthere.com<br />2 place Sathonay 69001 Lyon<br />Ouvert
+                  de 9h à 18h, du lundi au vendredi<br />
+                </p>
+              </div>            
+              <!--* (END) CONTAINER 3 -->
+
             </div>
-            <div class="col-sm-6">
-              <p>
-                contact@agencelapanthere.com<br />2 place Sathonay 69001 Lyon<br />Ouvert
-                de 9h à 18h, du lundi au vendredi<br />
-              </p>
-            </div>
+          <!--* (END) CONTAINER 2 -->
           </div>
+          <!--* (END) CONTAINER 1 -->
         </div>
-      </div>
-      <!-- bloc-7 END -->
+        <!--* (END) SECTION 2 / CONTACT FORM -->
 
-      <!-- ScrollToTop Button -->
-      <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"
-        ><span class="fa fa-chevron-up"></span
-      ></a>
-      <!-- ScrollToTop Button END-->
+    </main>
+    <!--! (END) MAIN -->
+    
+     
+    <!--* FOOTER -->
+    <footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+      
+      <!--* CONTAINER 1 -->
+      <div class="container bloc-sm">
+        
+        <!--* CONTAINER 2 -->
+        <div class="row">
+          
+          <!--* CONTAINER 3 -->
+          <div class="col-sm-12">
 
-      <!-- Footer - bloc-8 -->
-      <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
-        <div class="container bloc-sm">
-          <div class="row">
-            <div class="col-sm-12">
-              <p class="text-center white">
-                Agence La Panthère - Agence web basée à Lyon.<br />
-              </p>
-              <div class="row row-no-gutters social">
-                <div class="col-sm-3">
-                  <div class="text-center">
-                    <a class="social" href="index.html"
-                      ><span class="fa fa-twitter icon-md"></span
-                    ></a>
-                  </div>
+            <p class="text-center white">
+              Agence La Panthère - Agence web basée à Lyon.<br />
+            </p>
+
+            <!--* CONTAINER 4 / SOCIAL MEDIA LIST -->
+            <!--TODO / FIX LINKS, ADD ARIA-LABELs -->                          
+            <div class="row row-no-gutters social">
+
+              <!--! ITEN 1 / TWITTER -->  
+              <div class="col-sm-3">
+                <div class="text-center">
+                  <a class="social" href="index.html"
+                    ><span class="fa fa-twitter icon-md"></span
+                  ></a>
                 </div>
-                <div class="col-sm-3">
-                  <div class="text-center">
-                    <a class="social" href="index.html"
-                      ><span class="fa fa-facebook icon-md"></span
-                    ></a>
-                  </div>
+              </div>
+
+              <!--! ITEN 2 / FACEBOOK -->                   
+              <div class="col-sm-3">
+                <div class="text-center">
+                  <a class="social" href="index.html"
+                    ><span class="fa fa-facebook icon-md"></span
+                  ></a>
                 </div>
-                <div class="col-sm-3">
-                  <div class="text-center">
-                    <a class="social" href="index.html"
-                      ><span class="fa fa-dribbble icon-md"></span
-                    ></a>
-                  </div>
+              </div>
+              
+              <!--! ITEN 3 / DRIBBBLE -->      
+              <div class="col-sm-3">
+                <div class="text-center">
+                  <a class="social" href="index.html"
+                    ><span class="fa fa-dribbble icon-md"></span
+                  ></a>
                 </div>
-                <div class="col-sm-3">
-                  <div class="text-center">
-                    <a class="social" href="index.html"
-                      ><span class="fa fa-instagram icon-md"></span
-                    ></a>
-                  </div>
+              </div>
+
+              <!--! ITEN 4 / INSTAGRAM -->  
+              <div class="col-sm-3">
+                <div class="text-center">
+                  <a class="social" href="index.html"
+                    ><span class="fa fa-instagram icon-md"></span
+                  ></a>
                 </div>
               </div>
             </div>
+            <!--* (END) CONTAINER 4 / SOCIAL MEDIA LIST -->         
           </div>
         </div>
+        <!--* (END) CONTAINER 2 -->
       </div>
-      <!-- Footer - bloc-8 END -->
-    </div>
-    <!-- Principal conteneur END -->
+      <!--* (END) CONTAINER 1 -->
+    </footer>
+    <!--* (END) FOOTER -->
+
+    <!--! BUTTON SCROLL TO TOP-->  
+    <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')">
+      <span class="fa fa-chevron-up"></span>
+    </a>
+          
+
   </body>
+  <!--! (END) BODY -->
+
 </html>
