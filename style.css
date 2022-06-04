@@ -4,23 +4,62 @@
 
 body {
   min-width: 320px;
-  margin: auto;
-  padding: auto;
+  margin: auto !important;
+  padding: auto !important;
   background: #fff;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.social-line { 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 2rem;
+}
+
+
+
+
+.img-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+
+.g-bottom {
+  margin-bottom: 2rem
+}
+
 p { 
-  font-size: 1.7rem !important; 
+  font-size: 1.8rem !important; 
+  font-family: Helvetica, sans-serif !important;
 }
 
 a { 
   color: white;
   line-height: 2.5rem !important;
-  font-size: 1.7rem !important;   
+  font-size: 1.8rem !important; 
 }
+
+h2 {
+  font-weight: 600;
+  color: #575757;
+}
+
+
+h3 {
+  font-weight: 600;
+  color: #575757;
+  font-size: 2rem !important;   
+
+}
+
 
 li {
   list-style: none;
@@ -29,18 +68,27 @@ li {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
 h6,
 p,
 label,
-.btn,
+.btn
 {
   font-family: "helvetica";
-  font-weight: 400;
   color: black !important;
+}
+
+
+.itemportfolio {
+  font-weight: 600 !important;
+  color: #863A55 !important;
+}
+
+.quotewriter {
+  font-size: 1.7rem;
+  font-weight: bold;
 }
 
 
@@ -77,16 +125,12 @@ a:hover {
 }
 
 .bloc .container {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .bloc-lg {
   padding: 100px 50px;
-}
-
-.bloc-md {
-  padding: 50px;
 }
 
 .bloc-sm {
