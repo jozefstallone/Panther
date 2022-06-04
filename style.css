@@ -1,11 +1,22 @@
+
+/* UPDATE FIX */
+
+
 body {
-  margin: 0;
-  padding: 0;
+  min-width: 320px;
+  margin: auto;
+  padding: auto;
   background: #fff;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+p { 
+  font-size: 1.7rem !important; 
+}
+
+
 
 a,
 button {
@@ -40,8 +51,8 @@ a:hover {
 }
 
 .bloc .container {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .bloc-lg {

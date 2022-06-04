@@ -132,7 +132,7 @@
 
 
         <!--* SECTION 2 / CONTACT FORM -->
-        <div class="bloc bgc-white l-bloc" id="bloc-7">
+        <section class="bloc bgc-white l-bloc" id="bloc-7">
 
           <!--* CONTAINER 1 -->
           <div class="container bloc-lg">
@@ -148,40 +148,40 @@
                   id="form_1"
                   novalidate
                   success-msg="Your message has been sent."
-                  fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
-                >
+                  fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"                >
 
                   <!--! ITEN 1 / NAME -->
                   <div class="form-group">
-                    <label> Nom </label>
-                    <input id="name" class="form-control" required />
+                    <!-- Ajout de "for=name" -->
+                    <label for="name"> Nom </label>
+                    <input id="name" class="form-control" required placeholder="Nom requis"/>
                   </div>
 
                   <!--! ITEN 1 / MAIL -->
                   <div class="form-group">
-                    <label> Adresse email </label>
+                    <label for="email"> Adresse email </label>
                     <input
                       id="email"
                       class="form-control"
                       type="email"
-                      required
+                      required placeholder="Email requis"
                     />
                   </div>
 
                   <!--! ITEN 3 / HEARD OF US -->
                   <div class="form-group">
-                    <label> Comment nous avez-vous connu ? </label>
+                    <label for="heardofus"> Comment nous avez-vous connu ? </label>
                     <input
+                      id="heardofus"
                       class="form-control"
-                      type="email"
-                      required
-                      id="input_504"
+                      type="text"
+                      required placeholder="Information requise"                      
                     />
                   </div>
 
                   <!--! ITEN 4 / PROJECT BRIEF -->
                   <div class="form-group">
-                    <label>
+                    <label for="message">
                       Brief de votre projet (Ajoutez autant de détails que
                       nécessaire)<br /> </label
                     ><textarea
@@ -189,9 +189,10 @@
                       class="form-control"
                       rows="4"
                       cols="50"
-                      required
+                      required placeholder="Message requis"
                     ></textarea>
                   </div>
+
 
                   <!--! BUTTON CONFIRM "ENVOYER" -->
                   <button
@@ -219,7 +220,7 @@
           <!--* (END) CONTAINER 2 -->
           </div>
           <!--* (END) CONTAINER 1 -->
-        </div>
+        </>
         <!--* (END) SECTION 2 / CONTACT FORM -->
 
     </main>
