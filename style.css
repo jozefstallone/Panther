@@ -1,15 +1,17 @@
 
 /* UPDATE FIX */
 
-
 body {
   min-width: 320px;
   margin: auto !important;
-  padding: auto !important;
   background: #fff;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.white-link {
+  color: white !important;
 }
 
 
@@ -17,10 +19,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-size: 2rem;
 }
-
-
 
 
 .img-center {
@@ -44,7 +43,7 @@ p {
 a { 
   color: white;
   line-height: 2.5rem !important;
-  font-size: 1.8rem !important; 
+  font-size: 1.8rem !important;   
 }
 
 h2 {
@@ -89,6 +88,7 @@ label,
 .quotewriter {
   font-size: 1.7rem;
   font-weight: bold;
+  color: #863A55 !important;
 }
 
 
@@ -928,13 +928,13 @@ h4 {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .b-parallax {
     background-attachment: scroll;
   }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
   .b-parallax {
     background-attachment: scroll;
   }
@@ -953,8 +953,8 @@ h4 {
     position: relative;
   }
   .bloc {
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
+    /* padding-left: constant(safe-area-inset-left);
+    padding-right: constant(safe-area-inset-right); */
   }
   .bloc-group,
   .bloc-group .bloc {
@@ -964,8 +964,8 @@ h4 {
   .bloc-fill-screen .fill-bloc-top-edge,
   .bloc-fill-screen .fill-bloc-bottom-edge {
     padding: 0 20px;
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
+    /* padding-left: constant(safe-area-inset-left);
+    padding-right: constant(safe-area-inset-right); */
   }
 }
 
