@@ -4,6 +4,9 @@
   <head>
     <meta charset="utf-8" />
 
+      <!--! AJOUT D'UNE BALISE ROBOTS -->
+      <meta name="robots" content="index, follow"></code>
+
     <!--! AJOUT D'UNE META DESCRIPTION -->
     <meta
       name="description"
@@ -17,7 +20,7 @@
     />
 
     <!--TODO CHANGER IMAGE ICON FORMAT -->
-    <link rel="icon" type="image/png" href="/img/favicon.ico" />
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
 
     <!--! FEUILLES DE STYLE - CORRECTION DES CHEMINS (SUPPRESSION DE min) -->
     <!-- BOOTSTRAP 3.3.7 CDN -->
@@ -27,18 +30,19 @@
     <!-- FONTAWESOME 4.7.0 CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" href="./css/et-line.css" />
+    <link rel="stylesheet" type="text/css" href="./css/et-line.css"/>
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 
 
     <!--! SCRIPTS - CORRECTION DES CHEMINS (SUPPRESSION DE min) -->
-    <!--TODO SCRIPTS - OPTIMISER SCRIPS DEFER ASYNC -->
+    <!--TODO SCRIPTS - DIFFÉRÉS -->
     <script src="./js/jquery-2.1.0.js"></script>
-    <script src="./js/bootstrap.js"></script>
     <script src="./js/blocs.js"></script>
+    <script src="./js/bootstrap.js"></script>
     <script src="./js/jqBootstrapValidation.js"></script>
     <script src="./js/formHandler.js"></script>
+    <script src="./js/blocs.js"></script>
 
     <!--TODO AJOUT DE GOOGLE ANALYTICS  -->
     <!--* Analytics -->
@@ -54,10 +58,10 @@
   <body class="page-container">
 
     <!--* HEADER -->
-    <header class="bloc bgc-white l-bloc" id="bloc-0">
+    <header class="bloc bgc-white l-bloc " id="bloc-0">
 
       <!--* CONTAINER HEADER -->
-      <div class="container bloc-sm">
+      <div class="container bloc-sm ">
 
         <!--! NAVIGATION BAR -->
         <nav class="navbar row">
@@ -68,7 +72,8 @@
               <img
                 src="img/agence-la-panthere-monochrome.svg"
                 alt="Bannière - vers Accueil"
-                height="40"/>
+                height="40"
+                width="215"/>
             </a>
 
             <!--! MOBILE TOGGLE BUTTON -->
@@ -78,14 +83,14 @@
               class="ui-navbar-toggle navbar-toggle"
               data-toggle="collapse"
               data-target=".navbar-1">
-              <span class="sr-only">Toggle navigation</span
+              <span class="sr-only">Dérouler la navigation</span
               ><span class="icon-bar"></span><span class="icon-bar"></span
               ><span class="icon-bar"></span>
             </button>              
           </div>
 
           <!--! LINKS / ACCUEIL / CONTACT -->          
-          <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+          <div class="collapse navbar-collapse navbar-1 special-dropdown-nav ">
             <ul class="site-navigation nav navbar-nav">
               <li>
                 <a href="index.html">Accueil</a>
@@ -112,8 +117,8 @@
 
       <!--* SECTION 1 / PARLONS WEB -->
       <section
-        class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper"
-        id="bloc-6"> <!--! BACKGROUND -->
+      class="bloc tc-white bgc-atomic-tangerine bg-banniere d-bloc bloc-bg-texture texture-paper b-parallax"
+      id="bloc-6-hero"> <!--! BACKGROUND -->
 
         <div class="container bloc-lg">
           <div class="row">
