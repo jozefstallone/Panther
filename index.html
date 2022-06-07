@@ -4,14 +4,12 @@
   <head>
     <meta charset="utf-8" />
 
-    <!--! AJOUT D'UNE BALISE ROBOTS -->
-    <meta name="robots" content="index, follow">
-
     <!--! AJOUT D'UNE META DESCRIPTION -->
     <meta
       name="description"
       content="Agence de webdesign située à Lyon. 
-    La Panthère vous apporte son expertise et vous accompagne dans la création ou la refonte de votre site web."
+      La Panthère vous apporte son expertise et vous accompagne 
+      dans la création ou la refonte de votre site web."
     />
 
     <meta
@@ -22,9 +20,8 @@
     <!--TODO CHANGER IMAGE ICON FORMAT -->
     <link rel="icon" type="image/png" href="img/favicon.ico" />
 
-    <!--! FEUILLES DE STYLE - CORRECTION DES CHEMINS / AJOUT DE CDN -->
-    
-    <!-- BOOTSTRAP 3.3.7 -->
+    <!--! FEUILLES DE STYLE - AJOUT DE CDN -->
+        <!-- BOOTSTRAP 3.3.7 -->
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
 
     <!-- FONTAWESOME 4.7.0 CDN -->
@@ -36,8 +33,7 @@
     <!-- STYLE.CSS -->
     <link rel="stylesheet" type="text/css" href="style.min.css"/>
 
-
-    <!--TODO SCRIPTS - OPTIMISER SCRIPS CDN / DEFER / MIN -->
+    <!--! SCRIPTS - OPTIMISER SCRIPS CDN / DEFER / MIN -->
     <!-- CDN - JQUERY 2.1.0 -->
     <!-- <script src="./js/jquery-2.1.0.min.js" defer></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js" 
@@ -50,7 +46,7 @@
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
     crossorigin="anonymous" defer></script>
 
-    <!-- SCRIPTS -->
+    <!-- AUTRES SCRIPTS -->
     <script src="./js/blocs.min.js" defer></script> 
     <script src="./js/jquery.touchSwipe.min.js" defer></script>
  
@@ -59,16 +55,17 @@
     <!-- Analytics -->
     <!-- Analytics END -->
 
-    <!--! AJOUT D'UN TITRE"  -->
+    <!--! AJOUT D'UN TITRE  -->
     <title>La Panthère | Agence Webdesign, Lyon</title>
-  </head>
+    
+    </head>
 
   <!-- CONTAINER -->
   <body class="page-container">
 
     <!-- HEADER -->
     <header class="bloc bgc-white l-bloc" id="bloc-0">      
-      <div class="container bloc-sm">
+      <section class="container bloc-sm">
         <nav class="navbar row">
           <div class="navbar-header">
             <a class="navbar-brand" href="index.html"
@@ -105,11 +102,11 @@
             </ul>
           </div>
         </nav>
-      </div>
+      </section>
     </header>
 
     <main>
-<!-- * SECTION 1 - BLOC 1 - PRESENTATION -->
+      <!-- * SECTION 1 - PRESENTATION -->
       <section
         class="bloc tc-white bgc-atomic-tangerine bg-banniere d-bloc bloc-bg-texture texture-paper b-parallax"
         id="bloc-1-hero">
@@ -140,10 +137,8 @@
           </div>
         </div>
       </section>
-      <!-- * SECTION 1 - BLOC 1 - PRESENTATION - (END) -->
-      
-
-      <!-- SECTION 2 / SERVICES -->
+            
+      <!--* SECTION 2 / SERVICES -->
       <section class="bloc bgc-white l-bloc" id="bloc-2-services">
         <div class="container bloc-md">
           <div class="row">
@@ -208,18 +203,19 @@
           <!--TODO CHANGE TEXTE IMAGE -> TEXT" -->
           <div class="row voffset-lg voffset">
             <div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
-              <h2>" L'agence La Panthère est une excellente agence web !
-                Les web designers ont réussi à capturer l'essence de notre entreprise et à l'intégrer à notre site.
-                Cela nous à aidé à doubler nos ventes en ligne à Lyon. "</h2>  
-                <em class="quotewriter">Maxime Guibard, PDG de À vos Fourchettes</em> <br><br><br><br><br>                  
+              <figure>
+                <blockquote class="quote">" L'agence La Panthère est une excellente agence web !
+                  Les web designers ont réussi à capturer l'essence de notre entreprise et à l'intégrer à notre site.
+                  Cela nous à aidé à doubler nos ventes en ligne à Lyon."</blockquote>
+                  <figcaption class="quotewriter"><cite>Maxime Guibard, PDG de À vos Fourchettes</cite></figcaption> <br> <br>
+              </figure>
+
             </div>
           </div>
         </div>
       </section>
-      <!-- (END) SECTION 2 / SERVICES -->
-      
-
-      <!-- SECTION 3 / CONTACTEZ-NOUS -->      
+            
+      <!--* SECTION 3 / CONTACTEZ-NOUS -->      
       <section
         class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax"
         id="bloc-3-what-i-do"> <!--! BACKGROUND -->
@@ -247,7 +243,7 @@
           </div>
         </div>
       </section>
-      <!--* (END) SECTION 3 / CONTACTEZ-NOUS 1 -->
+      >
 
       <!--* SECTION 4 / PORTFOLIO -->      
       <section
@@ -364,18 +360,7 @@
           </div>          
         <!--* (END) CONTAINER -->
       </section>
-      <!--* (END) SECTION 4 / PORTFOLIO --> 
-
-
-
-
-
-
-
-
-
-
-
+      
       <!--* SECTION 5 / CONTACTEZ-NOUS 2 -->
       <section class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
 
@@ -397,13 +382,9 @@
           </div>
         </div>
       </section>
-      <!--* (END) SECTION 5 / CONTACTEZ-NOUS 2 -->
-
+      
     </main>
-    <!--* (END) MAIN -->
-
-
-
+    
     <!--* FOOTER -->
     <footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 
@@ -430,7 +411,8 @@
               <!--! TWITTER -->
               <div class="col-sm-3">
                 <div class="text-center">
-                  <a class="social" href="https://twitter.com/" aria-label="Twitter"
+                  <a class="social" href="https://twitter.com/" 
+                     aria-label="Twitter"
                     ><span class="fa fa-twitter icon-md"></span
                   ></a>
                 </div>
@@ -472,8 +454,7 @@
       <!--* (END) CONTAINER 1 -->
 
     </footer>
-    <!--* (END) FOOTER -->
-
+    
         <!-- ! BUTTON SCROLL TO TOP   -->
     <!-- <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')">
       <span class="fa fa-chevron-up"></span>
